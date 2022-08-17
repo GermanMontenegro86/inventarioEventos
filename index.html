@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="esp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Inventario</title>
+</head>
+
+<body class="body">
+    <header class="titulo">
+        <h1>Inventario</h1>
+    </header>
+
+    <main>
+
+        <div class="botones">
+            <form class="form">
+                <h2>Cargar productos:</h2>
+                <p> Producto: <input type="text" id="nombre" placeholder="nombre"> </p>
+                <br>
+                <p> Precio: <input type="number" id="precio" placeholder="precio"> </p>
+                <br>
+                <p> Stock: <input type="number" id="stock" placeholder="stock"> </p>
+                <br>
+                <p> Vencimiento: <input type="text" id="vto" placeholder="00/00/000"> </p>
+                <br>
+                <input type="button" id="Guardar" value="aceptar">
+                <input type="reset">
+
+            </form>
+
+            <form>
+                <h2>Buscar producto</h2>
+                <p> Producto: <input type="text" id="pro" placeholder="nombre"> </p>
+                <input type="button" id="buscar" value="Buscar">
+                <input type="reset">
+            </form>
+
+            <form>
+                <h2>Buscar producto con mayor stock</h2>
+                <p> Stock: <input type="number" id="numero" placeholder="numero"> </p>
+                <input type="button" id="cantidad" value="encontrar">
+                <input type="reset">
+            </form>
+
+            <form>
+                <h2>Imprimir todos los productos</h2>
+                <input type="button" id="imprimir" value="Imprimir">
+               
+            </form>
+
+        </div>
+
+
+        <div class="productos">
+            <div class="Producto">
+                <h2 class="nombres">Producto</h2>
+            </div>
+            <div class="Precio">
+                <h2 class="nombres">Precio</h2>
+            </div>
+            <div class="Stock">
+                <h2 class="nombres">Stock</h2>
+            </div>
+            <div class="Vencimiento">
+                <h2 class="nombres">Vencimiento</h2>
+            </div>
+        </div>
+
+    </main>
+
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
